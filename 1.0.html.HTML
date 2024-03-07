@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style1.0.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <!-- SIDE BAR -->
+  <input type="checkbox" id="check">
+  <label for="check">
+    <i class="fas fa-bars" id="btn"></i>
+    <i class="fas fa-times" id="cancel"></i>
+  </label>
+  <div class="sidebar">
+    <header>My Menu</header>
+    <a href="#" class="active">
+      <i class="fas fa-qrcode"></i>
+      <span>Dashboard</span>
+    </a>
+    <a href="#">
+      <i class="far fa-clock fa-spin"></i>
+      <span>clock</span>
+    </a>
+    <a href="#">
+      <i class="fas fa-stopwatch"></i>
+      <span>stopwatch</span>
+    </a>
+    <a href="#">
+      <i class="fas fa-calendar"></i>
+      <span>calender</span>
+    </a>
+
+    <a href="#">
+      <i class="fas fa-tasks"></i>
+      <span>todolist</span>
+
+
+
+      <a href="#">
+        <i class="far fa-question-circle"></i>
+        <span>About</span>
+      </a>
+
+      <a href="#">
+        <i class="far fa-envelope"></i>
+        <span>Contact</span>
+      </a>
+  </div>
+
+
+  <!--  profile button -->
+  <div class="Profile">
+    <nav>
+      <img src="images/large.png" alt="logo" class="logo">
+      <h1 class="Heading">PRODUCT-1 </h1>
+      <img src="images/user.jpg" class="user-pic" onclick="toggleMenu() ">
+
+      <div class="sub-menu-wrap" id="submenu">
+        <div class="sub-menu">
+          <div class="user-info">
+            <img src="images/user.jpg">
+            <h3>Prashant Karad</h3>
+          </div>
+
+          <hr>
+
+          <a href="#" class="sub-menu-link">
+            <img src="images/profile.png">
+            <p>Edit Profile</p>
+            <span>></span>
+          </a>
+
+          <a href="#" class="sub-menu-link">
+            <img src="images/setting.png">
+            <p>Setting & Privacy</p>
+            <span>></span>
+          </a>
+
+          <a href="#" class="sub-menu-link">
+            <img src="images/help.png">
+            <p>help and support </p>
+            <span>></span>
+          </a>
+
+          <a href="#" class="sub-menu-link">
+            <img src="images/logout.png">
+            <p>Logout </p>
+            <span>></span>
+
+          </a>
+        </div>
+
+      </div>
+    </nav>
+    <!--  greeting -->
+    <h2 class="greeting">Welcome! Prashant</h2>
+
+    <!-- MENU BOXES -->
+    <div class="container">
+      
+      <div class="box-container">
+        <div class="box">
+          <img src="images/calender.jpg" alt="">
+          <h3>CALENDER </h3>
+          <a href="#" class="btn"> CLICK HERE</a>
+        </div>
+        <div class="box">
+          <img src="images/clocks.jpg" alt="">
+          <h3>CLOCK</h3>
+          <a href="#" class="btn">CLICK HERE</a>
+        </div>
+        <div class="box">
+          <img src="images/clock.png" alt="">
+          <h3>STOPWATCH</h3>
+          <a href="#" class="btn">CLICK HERE</a>
+        </div>
+        <div class="box">
+          <img src="images/to do list.png" alt="">
+          <h3>TODOLIST</h3>
+          <a href="#" class="btn">CLICK HERE</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+ 
+  <!-- java script  -->
+
+  <script>
+    let submenu = document.getElementById("submenu")
+    function toggleMenu() {
+      submenu.classList.toggle("open-menu");
+    }
+  </script>
+</body>
+
+</html>
