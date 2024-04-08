@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<title>Settings</title>
+</head>
+<body>
+
+<div class="container">
+  <h2>Settings</h2>
+  
+  
+  
+  <!-- Time Management Preferences -->
+  <div class="setting-group">  
+    <h3>Time Management Preferences</h3>
+    <label for="default-view">Default View:</label>
+    <select id="default-view" name="default-view">
+      <option value="day">Day</option>
+      <option value="week">Week</option>
+      <option value="month">Month</option>
+    </select>     
+    
+    <label for="start-week">Start of the Week:</label>
+    <select id="start-week" name="start-week">
+      <option value="sunday">Sunday</option>
+      <option value="monday">Monday</option>
+    </select>
+    
+    <label for="time-format">Time Format:</label>
+    <select id="time-format" name="time-format">
+      <option value="12-hour">12-hour</option>
+      <option value="24-hour">24-hour</option>
+    </select>
+    
+    <button>Save Preferences</button>
+  </div>
+  
+  <!-- Feature Settings -->
+  <div class="setting-group">
+    <h3>Feature Settings</h3>
+    <label for="clock-format">Clock Format:</label>
+    <select id="clock-format" name="clock-format">
+      <option value="12-hour">12-hour</option>
+      <option value="24-hour">24-hour</option>
+    </select>
+    
+    <label for="calendar-first-day">Calendar First Day:</label>
+    <select id="calendar-first-day" name="calendar-first-day">
+      <option value="sunday">Sunday</option>
+      <option value="monday">Monday</option>
+    </select>
+    
+    <label for="stopwatch-format">Stopwatch Format:</label>
+    <select id="stopwatch-format" name="stopwatch-format">
+      <option value="standard">Standard</option>
+      <option value="lap">Lap</option>
+    </select>
+    
+    <label for="todo-list-sort">To-Do List Sort Order:</label>
+    <select id="todo-list-sort" name="todo-list-sort">
+      <option value="date">Date</option>
+      <option value="priority">Priority</option>
+    </select>
+    
+    <button>Apply Feature Settings</button>
+  </div>
+  
+
+
+</body>
+</html>
